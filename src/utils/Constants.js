@@ -1,0 +1,2 @@
+const API_KEY = "AIzaSyArQkmS8qVzidivlFiQ71s47EhXf4cvpH8";
+export const YOUTUBE_VIDEO_CATEGORIES = "https://youtube.googleapis.com/youtube/v3/videoCategories?part=snippet&max_results=10&regionCode=US&key="+API_KEY;
