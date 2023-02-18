@@ -5,7 +5,7 @@ import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import Hamburger from '../assets/HamburgerMenu.png'
 import { useDispatch } from 'react-redux';
 import { toggleSideBar } from '../utils/AppSlice';
-import { Link } from 'react-router-dom';
+
 const Header = () => {
     const dispatch = useDispatch();
     const toggleSidebarHandler = () => {

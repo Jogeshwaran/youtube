@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import appSlice from "./AppSlice";
+import sideBarSlice from "./SideBarSlice";
 
 const store = configureStore({
     reducer : {
-        app : appSlice
+        app : appSlice,
+        sidebar : sideBarSlice
     }
 
 });

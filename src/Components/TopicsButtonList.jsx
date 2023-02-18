@@ -15,9 +15,9 @@ const TopicsButtonList = () => {
 
   }
   return (
-    <div>
+    <div className='px-0.5'>
       {categories.slice(0,9).map((category) => (
-        <button key={category.id} className= 'm-2 rounded-xl bg-gray-100 p-2'>{category.snippet.title}</button>
+        <button key={category.id} className= 'm-2 rounded-xl bg-gray-100 p-2 '>{category.snippet.title}</button>
       ))}
         
     </div>

@@ -7,11 +7,11 @@ import { Outlet } from 'react-router-dom';
 
 
 const Body = () => {
-    const isSideBarOpen = useSelector((store) => store.app.isSideBarOpen)
+    const isSideBarCardOpen = useSelector((store) => store.app.isSideBarCardOpen)
 
     return(
         <div className=' flex'>
-      { isSideBarOpen === true ? <SidebarCard /> : <Sidebar />}
+      { isSideBarCardOpen === true ? <SidebarCard /> : <Sidebar />}
         <Outlet />
         </div>
     )
