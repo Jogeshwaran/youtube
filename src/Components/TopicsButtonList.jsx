@@ -10,7 +10,7 @@ const TopicsButtonList = () => {
   const getApiData = async() =>{
     const data = await fetch(YOUTUBE_VIDEO_CATEGORIES);
     const json = await data.json()
-    console.log(json.items);
+    //console.log(json.items);
     setcategories(json.items)
 
   }

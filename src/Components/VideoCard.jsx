@@ -1,12 +1,12 @@
 import React from 'react'
 
 const VideoCard = ({info}) => {
-    console.log(info);
+    //console.log(info);
     const {snippet,statistics} = info;
-    const {channelTitle,thumbnails,title,publishedAt} = snippet;
+    const {channelTitle,thumbnails,title} = snippet;
      const {viewCount} = statistics;
   return (
-    <div className='p-2 m-2 w-64 shadow-lg'>
+    <div className='p-2 m-2 w-64 '>
        
      <img className='rounded-lg' src= {thumbnails.medium.url} alt="video" />
         <ul>
