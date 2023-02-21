@@ -1,10 +1,16 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import { addTags } from '../utils/TagSlice';
 
 const VideoCard = ({info}) => {
     //console.log(info);
     const {snippet,statistics} = info;
-    const {channelTitle,thumbnails,title} = snippet;
+    const {channelTitle,thumbnails,title,tags} = snippet;
      const {viewCount} = statistics;
+      console.log(tags);
+     const dispatch = useDispatch();
+     dispatch(addTags(tags))
+
   return (
     <div className='p-2 m-2 w-64 '>
        

@@ -10,7 +10,7 @@ const Body = () => {
     const isSideBarCardOpen = useSelector((store) => store.app.isSideBarCardOpen)
 
     return(
-        <div className=' flex'>
+        <div className=' flex bg-white'>
       { isSideBarCardOpen === true ? <SidebarCard /> : <Sidebar />}
         <Outlet />
         </div>
