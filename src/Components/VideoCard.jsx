@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { addTags } from '../utils/TagSlice';
 
 const VideoCard = ({info}) => {
-    //console.log(info);
+    console.log(info);
     const {snippet,statistics} = info;
     const {channelTitle,thumbnails,title,tags} = snippet;
      const {viewCount} = statistics;

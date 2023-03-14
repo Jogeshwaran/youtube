@@ -69,7 +69,7 @@ const Header = () => {
     }
  
   return (
-    <div className='grid grid-flow-col p-5 m-2 shadow-sm sticky top-0 bg-white'>
+    <div className='grid grid-flow-col p-5 m-2 shadow-sm sticky top-0 bg-white z-[1000]'>
       <div className='flex col-span-1'>
       <img onClick={() => toggleSidebarHandler()} className=' h-6 w-6 mt-4 cursor-pointer' alt='icon' src={Hamburger} />
         <a href="/"><img className=' object-contain w-24 mx-2 cursor-pointer' alt='youtube-logo' src={logo} /></a>
